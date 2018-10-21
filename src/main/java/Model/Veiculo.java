@@ -3,6 +3,8 @@ package Model;
 public class Veiculo {
     private int id;
     private Montadora montadora;
+    private int qtd;
+    private int qtdDisponivel;
     private String modelo;
     private int anoFabricacao;
     private double precoLancamento;
@@ -99,6 +101,22 @@ public class Veiculo {
 
     public void setPesoEmKg(int pesoEmKg) {
         this.pesoEmKg = pesoEmKg;
+    }
+
+    public int getQtd() {
+        return qtd;
+    }
+
+    public void setQtd(int qtd) {
+        this.qtd = qtd;
+    }
+
+    public int getQtdDisponivel() {
+        return qtdDisponivel;
+    }
+
+    public void setQtdDisponivel(int qtdDisponivel) {
+        this.qtdDisponivel = qtdDisponivel;
     }
     
 }
